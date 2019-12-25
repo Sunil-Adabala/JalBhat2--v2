@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jal-Track-v4</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <!-- <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" /> -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+
+  <!-- <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script> -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<!--
+  1<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+  2<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>-->
+
+
+
+  <!--Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <!-- 4<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script> -->
+
+
+  <!-- Add Firebase products that you want to use -->
+  <!-- 5<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-auth.js"></script>
+  6<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-firestore.js"></script>
+  7<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-database.js"></script> -->
+
+
+
+</head>
+
+<body>
+
+<h1>hey</h1>
+<button onclick="logOut()" value='logOut'>logOut</button>
+
+
+
+        <!--------------firebase credential here------------>
+  <!-- <script src="firebase.js"></script> -->
+	<script src="main.js"></script>
+  <script>
+
+ function logOut() {
+	console.log("I'm clicked");
+    firebase.auth().signOut();
+    window.location.replace("index.html")
+};
+	</script>
+</body>
+
+</html>
